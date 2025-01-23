@@ -1,0 +1,110 @@
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0px;
+}
+nav{
+    background-color: aqua;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo-heading{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+.menu-list{
+    display: flex;
+    gap: 32px;
+    font-size: 20px;
+    list-style: none;
+}
+.school-icon{
+    height: 62px;
+    width: 62px;
+}
+.nav-menu{
+    display: flex;
+}
+
+#home{
+    color: rgb(254, 163, 1);
+    text-decoration: none;
+}
+#about{
+    color: rgb(1, 172, 253);
+    text-decoration: none;
+}
+#facilities{
+    color: rgb(5, 212, 223);
+    text-decoration: none;
+}
+#admission{
+    color: rgb(93, 88, 239);
+    text-decoration: none;
+}
+nav button{
+    background-color: rgb(254, 163, 1);
+    border-radius: 12px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+}
+
+@media screen and (max-width: 576px){
+    .logo-heading>h1,button{
+        display: none;
+    }
+    
+}
+
+/* Banner section */
+
+.banner{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 100px;
+    gap: 30px;
+}
+.banner h1{
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+#text-color-1{
+    color: rgb(254, 163, 1);
+}
+#text-color-2{
+    color: rgb(1, 172, 253);
+}
+.banner p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.banner button{
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 12px;
+    height: 50px;
+    width: 200px;
+    border: none;
+}
+
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+}
