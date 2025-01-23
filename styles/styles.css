@@ -7,27 +7,31 @@
 *{
     margin: 0px;
 }
+
+.section-header{
+    text-align: center;
+}
 nav{
     background-color: aqua;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 20px;
 }
 .logo-heading{
     display: flex;
-    font-size: 20px;
+    font-size: 1.25rem;
     align-items: center;
 }
 .menu-list{
     display: flex;
     gap: 32px;
-    font-size: 20px;
+    font-size: 1.25rem;
     list-style: none;
 }
 .school-icon{
-    height: 62px;
-    width: 62px;
+    display: 100%;
 }
 .nav-menu{
     display: flex;
@@ -52,7 +56,7 @@ nav{
 nav button{
     background-color: rgb(254, 163, 1);
     border-radius: 12px;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px;
@@ -61,7 +65,7 @@ nav button{
 }
 
 @media screen and (max-width: 576px){
-    .logo-heading>h1,button{
+    .logo-heading>h1,.contact{
         display: none;
     }
     
@@ -76,9 +80,10 @@ nav button{
     align-items: center;
     margin: 10px 100px;
     gap: 30px;
+    padding: 20px;
 }
 .banner h1{
-    font-size: 56px;
+    font-size: 3.5rem;
     margin-bottom: 20px;
 }
 #text-color-1{
@@ -88,13 +93,13 @@ nav button{
     color: rgb(1, 172, 253);
 }
 .banner p{
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 20px;
 }
 .banner button{
     background-color: rgb(17, 17, 17);
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.25rem;
     border-radius: 12px;
     height: 50px;
     width: 200px;
@@ -107,4 +112,36 @@ nav button{
         align-items: center;
         text-align: center;
     }
+}
+
+/* Standard Curriculum Section */
+
+.card-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 100px 0px 100px;
+    gap: 20px;
+
+}
+.card-items *{
+    margin-top: 20px;
+}
+.card-items img{
+    height: 100px;
+}
+.card-content{
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid gray;
+}
+#card-1{
+    background-image: linear-gradient(180deg, rgba(222, 245, 255, 100%), rgba(255, 255, 255, 100%));
+}
+#card-2{
+    background-image: linear-gradient(180deg, rgba(255, 244, 220, 100%), rgba(255, 255, 255, 100%));
+}
+#card-3{
+    background-image: linear-gradient(180deg, rgba(238, 225, 255, 100%), rgba(255, 255, 255, 100%));
 }
