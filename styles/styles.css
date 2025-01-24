@@ -4,18 +4,19 @@
   font-weight: 400;
   font-style: normal;
 }
-*{
-    margin: 0px;
+body{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-/* Nav Section */
+/* Navigation Bar Section */
 
-nav{
-    margin-top: 20px;
+.navbar{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
 }
 .logo-heading{
     display: flex;
@@ -24,17 +25,10 @@ nav{
 }
 .menu-list{
     display: flex;
-    gap: 32px;
+    gap: 35px;
     font-size: 1.25rem;
     list-style: none;
 }
-.school-icon{
-    display: 100%;
-}
-.nav-menu{
-    display: flex;
-}
-
 #home{
     color: rgb(254, 163, 1);
     text-decoration: none;
@@ -51,7 +45,7 @@ nav{
     color: rgb(93, 88, 239);
     text-decoration: none;
 }
-nav button{
+.contact-btn{
     background-color: rgb(254, 163, 1);
     border-radius: 12px;
     font-size: 1.25rem;
@@ -62,24 +56,35 @@ nav button{
     width: 200px;
 }
 
+/* Navigation Bar Made Responsive */
+
 @media screen and (max-width: 576px){
-    .logo-heading>h1,.contact{
-        display: none;
+    .navbar{
+        max-width: 100%;
+        margin: 0 auto;
     }
     
+    .logo-heading > h1,
+    .contact-btn{
+        display: none;
+    }
+
 }
 
 /* Banner Section */
 
 .banner{
+    max-width: 90%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin: 10px 100px;
     gap: 30px;
-    padding: 20px;
 }
-.banner h1{
+.banner-img{
+    margin: 0 auto;
+}
+.banner-heading{
     font-size: 3.5rem;
     margin-bottom: 20px;
 }
@@ -89,11 +94,11 @@ nav button{
 #text-color-2{
     color: rgb(1, 172, 253);
 }
-.banner p{
+.banner-description{
     font-size: 1.25rem;
     margin-bottom: 20px;
 }
-.banner button{
+.btn-primary{
     background-color: rgb(17, 17, 17);
     color: rgb(255, 255, 255);
     font-size: 1.25rem;
@@ -103,16 +108,20 @@ nav button{
     border: none;
 }
 
+/* Banner Section Made Responsive */
+
 @media screen and (max-width: 576px) {
     .banner{
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
 
 /* Standard Curriculum Section */
-.section-2{
+.bg-image{
     background-image: url("../assets/bg.png");
 }
 .section-header{
@@ -122,20 +131,17 @@ nav button{
     margin-top: 70px;
 }
 .card-items{
+    max-width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin: 100px 100px;
+    align-items: stretch;
     gap: 20px;
-
-}
-.card-items *{
-    margin-top: 20px;
-}
-.card-items img{
-    height: 100px;
 }
 .card-content{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
     text-align: center;
     border-radius: 12px;
     padding: 20px;
@@ -152,11 +158,19 @@ nav button{
     background-image: linear-gradient(180deg, rgba(238, 225, 255, 100%), rgba(255, 255, 255, 100%));
     border: 0.5px solid rgba(238, 225, 255, 100%);
 }
+.card-content img{
+    width: auto;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
 .card-content h4{
     font-size: 1.25rem;
+    margin-bottom: 20px;
 }
 .card-content p{
     font-size: 1.15rem;
+    margin-bottom: 20px;
 }
 #btn-1, #btn-2, #btn-3{
     border: none;
@@ -203,4 +217,54 @@ nav button{
     .section-2{
         background-image: none;
     }
+}
+
+/* Story Section */
+
+
+.section-3{
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 100%), rgba(254, 163, 1, 30%)), url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-content{
+    display: flex;
+    gap: 15px;
+    max-height: fit-content;
+}
+.story-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.story{
+    border-radius: 12px;
+    background-color: white;
+}
+.story img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+.description{
+    padding: 0px 20px;
+    font-size: 1.15rem;
+}
+
+.addition{
+    height: 60%;
+    width: 100%;
+}
+
+.specific{
+    width: 45%;
+}
+
+.story-show-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
