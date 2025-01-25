@@ -295,7 +295,7 @@ marquee{
 @media screen and (max-width: 576px) {
     .bg-image-2{
         max-width: 100%;
-        height: 1200px;
+        height: 1600px;
         margin: 0 auto;
     }
     #story-1{
