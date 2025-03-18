@@ -1,381 +1,423 @@
 .quicksand-font {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-body{
-    max-width: 1440px;
-    margin: 0 auto;
+	font-family: "Quicksand", serif;
 }
 
-/* Navigation Bar Section */
-
-.navbar{
-    max-width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo-heading{
-    display: flex;
-    font-size: 1.25rem;
-    align-items: center;
-}
-.menu-list{
-    display: flex;
-    gap: 35px;
-    font-size: 1.25rem;
-    list-style: none;
-}
-#home{
-    color: rgb(254, 163, 1);
-    text-decoration: none;
-}
-#about{
-    color: rgb(1, 172, 253);
-    text-decoration: none;
-}
-#facilities{
-    color: rgb(5, 212, 223);
-    text-decoration: none;
-}
-#admission{
-    color: rgb(93, 88, 239);
-    text-decoration: none;
-}
-.contact-btn{
-    background-color: rgb(254, 163, 1);
-    border-radius: 12px;
-    font-size: 1.25rem;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px;
-    height: 50px;
-    width: 200px;
-}
-marquee{
-    width: 100%;
-    direction: left;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: rgb(111, 76, 156);
+body {
+	margin: 0 0;
 }
 
-/* Navigation Bar Made Responsive */
+/* Navbar section */
 
-@media screen and (max-width: 576px){
-    .navbar{
-        max-width: 90%;
-        margin: 0 auto;
-    }
-    
-    .logo-heading > h1,
-    .contact-btn,
-    .menu-list{
-        display: none;
-    }
+nav {
+	background-color: #e2e0da40;
 }
 
-/* Banner Section */
-
-.banner{
-    max-width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-.banner-img{
-    margin: 0 auto;
-}
-.banner-heading{
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-}
-#text-color-1{
-    color: rgb(254, 163, 1);
-}
-#text-color-2{
-    color: rgb(1, 172, 253);
-}
-.banner-description{
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-}
-.btn-primary{
-    background-color: rgb(17, 17, 17);
-    color: rgb(255, 255, 255);
-    font-size: 1.25rem;
-    border-radius: 12px;
-    height: 50px;
-    width: 200px;
-    border: none;
+#navbar-section {
+	width: 90%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-/* Banner Section Made Responsive */
+#logo-header {
+	display: flex;
+	font-size: 1.15rem;
+	align-items: center;
+}
+
+.logo {
+	width: 50%;
+}
+
+#menu-list {
+	display: flex;
+	gap: 20px;
+}
+
+.links {
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+#home-link {
+	color: rgb(254, 163, 1);
+}
+
+#about-link {
+	color: rgb(1, 172, 253);
+}
+
+#facilities-link {
+	color: rgb(5, 212, 223);
+}
+
+#admission-link {
+	color: rgb(93, 88, 239);
+}
+
+#contact-btn {
+	background-color: rgb(254, 163, 1);
+	color: rgb(255, 255, 255);
+	border-radius: 0.5rem;
+	font-size: 1.25rem;
+	border: none;
+	padding: 5px;
+	height: 2.5rem;
+	width: 8.5rem;
+	cursor: pointer;
+}
+
+marquee {
+	width: 100%;
+	direction: left;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: rgb(111, 76, 156);
+}
+
+/* Navbar made responsive */
 
 @media screen and (max-width: 576px) {
-    .banner{
-        max-width: 90%;
-        margin: 0 auto;
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-    }
-    .banner-img{
-        max-width: 90%;
-        margin: 0 auto;
-    }
+	#contact-btn,
+	#menu-list {
+		display: none;
+	}
+
+	.logo {
+		width: 80%;
+		padding: 1rem 0;
+	}
 }
 
-/* Standard Curriculum Section */
+/* Banner section */
 
-.bg-image-1{
-    background-image: url("../assets/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.section-header{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 2rem;
-    margin-top: 70px;
-}
-.card-items{
-    max-width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    gap: 20px;
-}
-.card-content{
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 12px;
-    padding: 20px;
-}
-#card-1{
-    background-image: linear-gradient(180deg, rgba(222, 245, 255, 100%), rgba(255, 255, 255, 100%));
-    border: 0.5px solid rgba(222, 245, 255, 100%);
-}
-#card-2{
-    background-image: linear-gradient(180deg, rgba(255, 244, 220, 100%), rgba(255, 255, 255, 100%));
-    border: 0.5px solid rgba(255, 244, 220, 100%);
-}
-#card-3{
-    background-image: linear-gradient(180deg, rgba(238, 225, 255, 100%), rgba(255, 255, 255, 100%));
-    border: 0.5px solid rgba(238, 225, 255, 100%);
-}
-.card-content img{
-    width: auto;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-.card-content h4{
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-}
-.card-content p{
-    font-size: 1.15rem;
-    margin-bottom: 20px;
-}
-#btn-1, #btn-2, #btn-3{
-    border: none;
-    font-family: "Quicksand", serif;
-    font-size: 1rem;
-    background: none;
-}
-#btn-1{
-    color: #64C8FF;
-}
-#btn-2{
-    color: #F0AA00;
-}
-#btn-3{
-    color: #8700FF;
-}
-.guide-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    gap: 10px;
-}
-.btn-design{
-    background-color: #F0AA00;
-    color: white;
-    font-size: 2rem;
-    border: none;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+#banner-section {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-/* Standard Curriculum Section Made Responsive */
+#title-div {
+	width: 60%;
+}
+
+#banner-heading {
+	font-size: 3rem;
+	margin-bottom: 1.25rem;
+}
+
+#text-color-1 {
+	color: rgb(254, 163, 1);
+}
+
+#text-color-2 {
+	color: rgb(1, 172, 253);
+}
+
+#banner-description {
+	font-size: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+#banner-btn {
+	background-color: rgb(17, 17, 17);
+	color: rgb(255, 255, 255);
+	font-size: 1.25rem;
+	border-radius: 0.5rem;
+	height: 3rem;
+	width: 10rem;
+	border: none;
+	cursor: pointer;
+}
+
+/* Banner section made responsive */
 
 @media screen and (max-width: 576px) {
-    .card-items{
-        max-width: 90%;
-        margin: 0 auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .guide-btn{
-        display: none;
-    }
+	#banner-section {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	#title-div {
+		width: 100%;
+		margin: 0 auto;
+	}
 }
 
-/* Story Section */
+/* Curriculum section */
 
-.bg-image-2{
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 100%), rgba(254, 163, 1, 30%)), url("../assets/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 900px;
-}
-.story-content{
-    display: flex;
-    gap: 15px;
-    max-width: 80%;
-    margin: 0 auto;
-}
-.story-items{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-.story{
-    border-radius: 12px;
-    background-color: white;
-}
-.story img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px 12px 0px 0px;
-}
-.description{
-    padding: 0px 20px;
-    font-size: 1.15rem;
-}
-.addition{
-    height: 60%;
-    width: 100%;
-}
-.specific{
-    width: 45%;
-}
-.story-show-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-}
-.test{
-    margin-left: 20px;
-    margin-top: -27px;
-    font-size: 1.25rem;
-    width: fit-content;
-    background-color: #01ACFD;
-    border-radius: 100px;
-    padding: 10px;
-    position: relative;
-    z-index: 1;
+.curriculum-bg {
+	background-image: url("../assets/bg.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }
 
-/* Story Section Made Responsive */
+#curriculum-section {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.section-header {
+	text-align: center;
+	margin-top: 1.25rem;
+	font-size: 2.25rem;
+	margin-top: 50px;
+}
+
+#Curriculum-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 1rem;
+}
+
+.card-content {
+	text-align: center;
+	border-radius: 1rem;
+	padding: 1.25rem;
+	width: fit-content;
+}
+
+#card-1 {
+	background-image: linear-gradient(
+		180deg,
+		rgb(198, 225, 236),
+		rgba(255, 255, 255)
+	);
+	border: 1px solid rgba(198, 225, 236);
+}
+
+#card-2 {
+	background-image: linear-gradient(
+		180deg,
+		rgb(243, 228, 196),
+		rgba(255, 255, 255)
+	);
+	border: 1px solid rgba(243, 228, 196);
+}
+
+#card-3 {
+	background-image: linear-gradient(
+		180deg,
+		rgba(238, 225, 255),
+		rgba(255, 255, 255)
+	);
+	border: 1px solid rgba(238, 225, 255);
+}
+
+.card-content img {
+	height: 20vh;
+}
+
+.card-content h4 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.card-content p {
+	font-size: 1.15rem;
+	margin-bottom: 1rem;
+}
+
+#read-more-1,
+#read-more-2,
+#read-more-3 {
+	font-size: 1.25rem;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+#read-more-1 {
+	color: #64c8ff;
+}
+
+#read-more-2 {
+	color: #f0aa00;
+}
+
+#read-more-3 {
+	color: #8700ff;
+}
+
+#arrow-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+	gap: 1rem;
+}
+
+.btn-design {
+	background-color: #f0aa00;
+	border: none;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.arrow-img {
+	width: 2rem;
+	fill: rgba(255, 255, 255, 100%);
+}
+
+/* Curriculum section made responsive */
 
 @media screen and (max-width: 576px) {
-    .bg-image-2{
-        max-width: 100%;
-        height: 1600px;
-        margin: 0 auto;
-    }
-    #story-1{
-        display: none;
-    }
-    .story-items{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-    }
-    .story{
-        height: calc(100vh / 1.4);
-    }
-    .test{
-        margin-left: 20px;
-        margin-top: -42px;
-        max-width: 50%;
-    } 
+	#Curriculum-card {
+		flex-direction: column;
+	}
+
+	#arrow-btn {
+		display: none;
+	}
 }
 
-/* Footer Section */
+/* Stories section */
 
-.footer-container{
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 500px;
-    background-color: #01ACFD;
+.stories-bg {
+	background-image: linear-gradient(
+			180deg,
+			rgba(255, 255, 255),
+			rgba(254, 163, 1, 30%)
+		),
+		url("../assets/bg.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }
-.footer-logo{
-    display: flex;
-    align-items: center;
+
+.stories-container {
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
 }
-.text-style{
-    color: white;
-    font-weight: 400;
-    font-size: 1.25rem;
+
+.story-1 {
+	grid-row: span 2;
 }
-.text-setup{
-    max-width: 30vw;
+
+.stories {
+	border-radius: 1rem;
+	background-color: white;
+	position: relative;
 }
-.footer-header{
-    font-weight: 800;
-    font-size: 2.25rem;
+
+.stories img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 12px 12px 0px 0px;
 }
-.about-header{
-    font-weight: 600;
-    font-size: 2rem;
+
+.story-title {
+	padding: 0 1.25rem;
+	font-size: 1.25rem;
 }
-.links-header{
-    font-weight: 600;
-    font-size: 2rem;
+
+.date-card {
+	margin-left: 1rem;
+	margin-top: -2rem;
+	font-size: 1.25rem;
+	width: fit-content;
+	background-color: #01acfd;
+	border-radius: 7rem;
+	padding: 1rem;
+	position: absolute;
+	z-index: 1;
 }
-.logo{
-    display: block;
-    position: relative;
-    z-index: 1;
+
+#view-btn {
+	display: flex;
+	justify-content: center;
 }
-.link-section img{
-    margin-right: 15px;
+
+.btn-property {
+	margin: 2rem auto;
+	text-align: center;
+	background-color: rgb(254, 163, 1);
+	color: rgb(255, 255, 255);
+	border-radius: 0.5rem;
+	font-size: 1.25rem;
+	border: none;
+	padding: 5px;
+	height: 2.5rem;
+	width: 8.5rem;
+	cursor: pointer;
 }
-footer ul{
-    list-style: none;
+
+/* Story section made responsive */
+
+@media screen and (max-width: 576px) {
+	.stories-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1rem;
+	}
 }
-footer li{
-    margin-bottom: 20px;
+
+/* Footer section */
+
+#footer-section{
+    background-color: #79b9d6;
+}
+
+#footer-container {
+	width: 90%;
+	margin: 0 auto;
+    padding: 2rem 0;
+	display: flex;
+	justify-content: space-between;
+    align-items: end;
+}
+
+#logo-footer {
+	display: flex;
+	align-items: center;
+}
+
+.footer-header {
+	font-weight: 800;
+	font-size: 2.25rem;
+}
+
+.footer-text {
+	font-weight: 400;
+	font-size: 1.25rem;
+}
+
+.text-width {
+	width: 30vw;
+}
+
+.about-header {
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+.links-header {
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+.link-section img {
+	margin-right: 1rem;
 }
 
 /* Footer Section Made Responsive */
 
 @media screen and (max-width: 576px) {
-    .footer-container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-    .text-setup{
-        max-width: 80vw;
-    }
+	#footer-container {
+        /* display: flex; */
+		flex-direction: column;
+		/* height: 100%; */
+	}
+	.text-width {
+		width: 90%;
+	}
 }
