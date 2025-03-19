@@ -26,10 +26,6 @@ nav {
 	align-items: center;
 }
 
-.logo {
-	width: 50%;
-}
-
 #menu-list {
 	display: flex;
 	gap: 20px;
@@ -139,6 +135,10 @@ marquee {
 	#banner-section {
 		flex-direction: column-reverse;
 		text-align: center;
+	}
+
+	#banner-img {
+		width: 100%;
 	}
 
 	#title-div {
